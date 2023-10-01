@@ -1,0 +1,10 @@
+.itemCount {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 250px;
+}
+
+.button {
+    width: 40px;
+}

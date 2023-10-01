@@ -1,0 +1,31 @@
+/*--- RESETEO ---*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--- BODY ---*/
+
+body {
+  background-color: #ecdced;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*--- MAIN ---*/
+
+.title {
+  color: black
+}
+
+.en-construccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px;
+}
+
+.en-construccion a {
+  margin: 0px 5px;
+}

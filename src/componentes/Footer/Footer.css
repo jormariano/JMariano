@@ -1,0 +1,28 @@
+.footer-socialnetworks {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-socialnetworks a img {
+    padding: 10px;
+    margin: 0px 5px;
+    height: 55px;
+    width: 55px;
+}
+
+.footer-copyright {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.img-logo-footer {
+    height: 21px;
+    width: 100px;
+    margin-top: 1px;
+    margin-left: 4px;
+}
