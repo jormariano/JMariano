@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { collection, getDocs, where, query } from "firebase/firestore";
 import { db } from "../../services/config";

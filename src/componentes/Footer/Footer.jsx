@@ -1,4 +1,3 @@
-import React from 'react'
 import './Footer.css'
 
 const Footer = () => {
@@ -22,7 +21,5 @@ const Footer = () => {
     </>
   )
 }
-
-// Instagram, LinkedIn y GitHub
 
 export default Footer

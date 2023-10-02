@@ -1,4 +1,3 @@
-import React from 'react'
 import './IniciarSesion.css'
 import { useState } from 'react'
 

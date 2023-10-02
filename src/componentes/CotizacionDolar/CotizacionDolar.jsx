@@ -1,6 +1,5 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
 import './CotizacionDolar.css'
+import { useEffect, useState } from 'react'
 
 const CotizacionDolar = () => {
 

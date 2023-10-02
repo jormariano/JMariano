@@ -34,7 +34,7 @@ const Productos = () => {
                     productos.map(producto => (
                         <div key={producto.id}>
                             <h3>Nombre: {producto.nombre}</h3>
-                            <h4>Precio: {producto.precio}</h4>
+                            <h4>Precio: {producto.preciousd}</h4>
                             <h4>Stock: {producto.stock}</h4>
                             <p>Descripcion: {producto.descripcion}</p>
                             <button onClick={ () => descontarStock(producto)}>Comprar</button>

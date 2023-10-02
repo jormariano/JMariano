@@ -30,7 +30,7 @@ export const CarritoProvider = ({ children }) => {
             });
             setCarrito(carritoActualizado);
             setCantidadTotal(prev => prev + cantidad);
-            setTotal(prev => prev + (item.precio * cantidad));
+            setTotal(prev => prev + (item.preciousd * cantidad));
         }
     }
 
@@ -40,7 +40,7 @@ export const CarritoProvider = ({ children }) => {
 
         setCarrito(carritoActualizado);
         setCantidadTotal(prev => prev - productoEliminado.cantidad);
-        setTotal(prev => prev - (productoEliminado.item.precio * productoEliminado.cantidad));
+        setTotal(prev => prev - (productoEliminado.item.preciousd * productoEliminado.cantidad));
     }
 
     const vaciarCarrito = () => {
