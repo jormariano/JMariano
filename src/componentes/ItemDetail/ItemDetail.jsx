@@ -18,7 +18,7 @@ const ItemDetail = ({ id, nombre, preciopesos, pesos, preciousd, usd, moneda, st
 
         console.log("Productos agregados: " + cantidad)
         
-        const item = {id, nombre, precio};
+        const item = {id, nombre, preciousd};
         agregarProducto(item, cantidad);
     }
 

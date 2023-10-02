@@ -82,7 +82,7 @@ const CheckOut = () => {
                                 <Card.Body>
                                     <Card.Title>{producto.item.id}.- {producto.item.nombre}</Card.Title>
                                     <Card.Text>{producto.item.nombre} x {producto.cantidad}</Card.Text>
-                                    <Card.Text>Precio: {producto.item.precio} </Card.Text>
+                                    <Card.Text>Precio: {producto.item.preciousd} </Card.Text>
                                     <Card.Text>Cantidad total: {cantidadTotal}</Card.Text>
                                 </Card.Body>
                             </Card>
