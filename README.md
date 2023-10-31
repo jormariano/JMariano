@@ -1,5 +1,5 @@
 # Jota Mariano
-Este es un Ecommerce creado con React. La aplicación permite adquirir dos productos: Pagina Web o Ecommerce. Los productos y las órdenes de compra se almacenan en Firebase.
+Ecommerce creado con React. La aplicación permite adquirir dos productos: Página Web o Ecommerce. Los productos y las órdenes de compra se almacenan en Firebase.
 
 ## Tecnologías utilizadas
 - Vite

@@ -17,6 +17,7 @@ li {
 
 .nav-link {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .img-logo {
@@ -34,4 +35,28 @@ li {
 .imgs-logos {
     display: flex;
     justify-content: space-around;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }

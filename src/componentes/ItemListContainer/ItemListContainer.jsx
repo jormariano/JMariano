@@ -27,8 +27,8 @@ const ItemListContainer = (props) => {
 
   return (
     <>
-      <h3>Clase 16 - 1h 19' - NETLIFY - REVISAR CARRITO DE COMPRAS</h3>
       <ItemList productos={productos} />
+      <h2>Pasar a ingles usando estas secciones: Home, About, Portfolio, Contact</h2>
     </>
   )
 }
