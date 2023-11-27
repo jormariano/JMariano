@@ -19,6 +19,16 @@ body {
   color: black
 }
 
+.background-img {
+  background-image: url("../../img/img-fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 674px;
+  width: auto;
+}
+
 .en-construccion {
   display: flex;
   flex-direction: row;

@@ -1,28 +1,38 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 .footer-socialnetworks {
-    margin-top: 5px;
+    margin-top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer-socialnetworks a img {
-    padding: 10px;
+    padding: 0px;
     margin: 0px 5px;
-    height: 55px;
-    width: 55px;
+    height: 30px;
+    width: 30px;
+}
+
+.footer-copy-logo {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
 }
 
 .footer-copyright {
     font-weight: bold;
     font-size: 15px;
-    display: flex;
-    justify-content: center;
-    margin: 10px auto;
+    margin-bottom: 0px;
 }
 
 .img-logo-footer {
     height: 21px;
     width: 100px;
-    margin-top: 1px;
-    margin-left: 4px;
+    margin: 0px 5px;
 }

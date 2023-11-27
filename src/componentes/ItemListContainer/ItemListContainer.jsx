@@ -28,7 +28,6 @@ const ItemListContainer = (props) => {
   return (
     <>
       <ItemList productos={productos} />
-      <h2>Pasar a ingles usando estas secciones: Home, About, Portfolio, Contact</h2>
     </>
   )
 }

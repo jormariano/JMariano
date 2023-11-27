@@ -17,16 +17,17 @@ const NavBar = () => {
       </Link>
 
       <nav>
-        <ul>
-          <li><NavLink to="/experiencia" className="nav-link"> ¿Quién soy? </NavLink></li>
+        <ul className='un-list'>
 
           <li><div className="dropdown">
-            <button className="nav-link">Productos</button>
+            <NavLink to="/list" className="nav-link">Productos</NavLink>
             <div className="dropdown-content">
               <NavLink to="/item/1">Página Web</NavLink>
               <NavLink to="/item/2">Ecommerce</NavLink>
             </div>
           </div></li>
+
+          <li><NavLink to="/experiencia" className="nav-link"> Experiencia </NavLink></li>
 
           <li><NavLink to="/blog" className="nav-link"> Blog </NavLink></li>
 
