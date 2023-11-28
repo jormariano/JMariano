@@ -27,8 +27,8 @@ li {
 }
 
 .img-logo {
-    height: 55px;
-    width: 220px;
+    height: 35px;
+    width: 150px;
     margin: 0px 40px;
 }
 
@@ -46,14 +46,14 @@ li {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 150px;
+    background-color: transparent;
+    min-width: 138px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
   
 .dropdown-content a {
-    padding: 12px 16px;
+    padding: 6px 8px;
     text-decoration: none;
     display: block;
     color: #333;

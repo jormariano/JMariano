@@ -3,7 +3,7 @@ import NavBar from './componentes/NavBar/NavBar'
 import Inicio from './componentes/Inicio/Inicio'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer'
-import Experiencia from './componentes/Experiencia/Experiencia'
+import Portfolio from './componentes/Portfolio/Portfolio'
 import Blog from './componentes/Blog/Blog'
 import ContactForm from './componentes/ContactForm/ContactForm'
 import Cart from './componentes/Cart/Cart'
@@ -17,15 +17,15 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+      <div className='background-img'>
         <CarritoProvider>
           <NavBar />
-          <div className='background-img'>
             <Routes>
               <Route path='/' element={<Inicio />} />
               <Route path='/list' element={<ItemListContainer />} />
               <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
               <Route path='/item/:idItem' element={<ItemDetailContainer />} />
-              <Route path='/experiencia' element={<Experiencia />} />
+              <Route path='/portfolio' element={<Portfolio />} />
               <Route path='/blog' element={<Blog />} />
               <Route path='/contac' element={<ContactForm />} />
               <Route path='/cart' element={<Cart />} />
@@ -34,8 +34,8 @@ const App = () => {
               <Route path='*' element={<div className='en-construccion'><h2>Este sitio no existe. Vuelve al</h2> <Link to='/'><h2>Inicio</h2></Link></div>} />
             </Routes>
             <Footer />
-          </div>
         </CarritoProvider>
+        </div>
       </BrowserRouter>
     </>
   )

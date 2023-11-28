@@ -46,4 +46,8 @@ const IniciarSesion = () => {
     )
 }
 
+// Olvidé mi contraseña. Recuperar
+// ¿Aún no tienes cuenta? Regístrate
+// No me llegó el mail de validación. Reenviar
+
 export default IniciarSesion

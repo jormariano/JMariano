@@ -1,0 +1,23 @@
+.cart-vacio {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cart-vacio-list {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid  #2C0E47;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #2C0E47;
+}
