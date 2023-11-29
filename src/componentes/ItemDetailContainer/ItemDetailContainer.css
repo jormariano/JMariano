@@ -1,0 +1,8 @@
+.card-item-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px auto;
+    height: 500px;
+    width: 800px;
+}

@@ -4,7 +4,6 @@ import emailjs from 'emailjs-com'
 
 const ContactForm = () => {
     const [nombre, setNombre] = useState('');
-    const [apellido, setApellido] = useState('');
     const [email, setEmail] = useState('');
     const [producto, setProducto] = useState('');
     const [consulta, setConsulta] = useState('');
@@ -14,7 +13,6 @@ const ContactForm = () => {
 
         const templateParams = {
             from_name: nombre,
-            from_surname: apellido,
             from_email: email,
             message: consulta
         };
@@ -33,7 +31,6 @@ const ContactForm = () => {
             })
 
         setNombre("");
-        setApellido("");
         setEmail("");
         setProducto("");
         setConsulta("");
@@ -41,28 +38,24 @@ const ContactForm = () => {
 
 
     return (
+
         <form onSubmit={enviarConsulta} className="contact-form">
 
-            <label htmlFor="nombre">Nombre: </label>
-            <input type="text" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)}></input>
+            <h3 className='contact-form-h3'>CONTÁCTAME</h3>
 
-            <label htmlFor="apellido">Apellido: </label>
-            <input type="text" id="apellido" value={apellido} onChange={(e) => setApellido(e.target.value)}></input>
+            <input type="text" placeholder="  NOMBRE COMPLETO" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)}></input>
 
-            <label htmlFor="email">Email: </label>
-            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+            <input type="email" placeholder="  EMAIL" id="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
 
-            <label htmlFor="choice">Producto: </label>
             <select id="choice" value={producto} onChange={(e) => setProducto(e.target.value)}>
-                <option value="selection">Selecciona</option>
-                <option value="ecommerce">Ecommerce</option>
-                <option value="website">Página Web</option>
+                <option value="" disabled hidden>SELECCIONA UN PRODUCTO</option>
+                <option value="ecommerce"> SITIO WEB</option>
+                <option value="website"> E-COMMERCE</option>
             </select>
 
-            <label>Consulta: </label>
-            <textarea value={consulta} onChange={(e) => setConsulta(e.target.value)}></textarea>
+            <textarea value={consulta} placeholder="  CONSULTA" onChange={(e) => setConsulta(e.target.value)}></textarea>
 
-            <button type="submit">Enviar consulta</button>
+            <button type="submit" className='contact-form-button'>ENVIAR CONSULTA</button>
 
         </form>
     )

@@ -1,0 +1,23 @@
+.faq-section {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.faq-item {
+    margin-bottom: 20px;
+}
+  
+h2 {
+    color: #333;
+}
+  
+h3 {
+    color: #555;
+}
+  
+p {
+    color: #777;
+}

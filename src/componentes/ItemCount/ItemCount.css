@@ -1,10 +1,48 @@
-.itemCount {
+.item-count {
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    width: 250px;
+    justify-content: space-around;
+    margin: 20px auto;
+    height: 40px;
+    width: 300px;
+    align-items: center;
 }
 
-.button {
-    width: 40px;
+.count-button {
+    background-color: #2C0E47;
+    color: white;
+    height: 35px;
+    border: none;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 6px;
+    cursor: pointer;
+    border-radius: 3px;
 }
+
+.count-p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+.count-button-add {
+    background-color: #2C0E47;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+

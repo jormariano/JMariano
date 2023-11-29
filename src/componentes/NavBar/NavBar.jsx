@@ -20,18 +20,18 @@ const NavBar = () => {
         <ul className='un-list'>
 
           <li><div className="dropdown">
-            <NavLink to="/list" className="nav-link">Productos</NavLink>
+            <NavLink to="/list" className="nav-link">PRODUCTOS</NavLink>
             <div className="dropdown-content">
-              <NavLink to="/item/1">Página Web</NavLink>
-              <NavLink to="/item/2">Ecommerce</NavLink>
+              <NavLink to="/item/1">SITIO WEB</NavLink>
+              <NavLink to="/item/2">ECOMMERCE</NavLink>
             </div>
           </div></li>
 
-          <li><NavLink to="/portfolio" className="nav-link"> Portfolio </NavLink></li>
+          <li><NavLink to="/portfolio" className="nav-link"> PORTFOLIO </NavLink></li>
 
-          <li><NavLink to="/blog" className="nav-link"> Blog </NavLink></li>
+          <li><NavLink to="/blog" className="nav-link"> BLOG/CONÓCEME </NavLink></li>
 
-          <li><NavLink to="/contac" className="nav-link"> Contacto </NavLink></li>
+          <li><NavLink to="/contac" className="nav-link"> CONTACTO </NavLink></li>
         </ul>
       </nav>
 

@@ -1,9 +1,8 @@
 header {
-    height: 65px;
+    height: 62px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 1px solid black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,6 +18,7 @@ li {
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .nav-link {
@@ -47,12 +47,15 @@ li {
     display: none;
     position: absolute;
     background-color: transparent;
-    min-width: 138px;
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    font-size: 18px;
+    left: -4px;
 }
   
 .dropdown-content a {
+    text-align: center;
     padding: 6px 8px;
     text-decoration: none;
     display: block;

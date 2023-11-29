@@ -1,3 +1,55 @@
-.item-detail .btn {
-    margin: 0px auto;
+.item-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.item-img-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.detail-card-img {
+    max-width: 400px;
+    margin-right: 16px;
+}
+
+.item-detail-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.item-detail-text h2 {
+    color: #2C0E47;
+    font-weight: bold;
+}
+
+.item-detail-text h3 {
+    text-align: justify;
+    font-size: 24px;
+    margin: 0px 20px;
+}
+
+.item-detail-text p {
+    font-size: 26px;
+}
+
+Link {
+    text-decoration: none;
+    color: #2C0E47;
+    font-weight: bold;
+}
+
+Link:hover {
+    color: #1A053A;
 }

@@ -1,5 +1,5 @@
 .contact-form {
-    max-width: 550px;
+    width: 400px;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
@@ -8,27 +8,51 @@
     padding: 10px;
     font-weight: bold;
     color: #040936ce;
+    text-align: center;
+}
+
+.contact-form-h3 {
+    font-size: 28px;
+    background-color: #ffffff;
+    color:  #2C0E47;
+    width: 200px;
+    margin: 0px auto;
 }
 
 .contact-form input {
     margin: 5px 0px;
+    height: 40px;
+    border: none;
+    outline: none;
 }
 
 .contact-form select {
     margin: 5px 0px; 
+    height: 40px;
+    border: none;
+    outline: none;
 }
 
 .contact-form option {
-    margin: 5px 0px; 
+    margin: 5px 0px;
+    border: none;
+    outline: none; 
 }
 
 .contact-form textarea {
     margin: 10px 0px;
     height: 140px;
+    border: none;
+    outline: none;
 }
 
-.contact-form button {
-    background-color: #2a2aa2;
-    font-size: 20px;
+.contact-form-button {
+    background-color: #2C0E47;
+    font-size: 16px;
+    padding: 5px;
+    width: 250px;
     color: #ebe2e2;
+    font-weight: bold;    
+    letter-spacing: 1px;
+    margin: 0 auto;
 }

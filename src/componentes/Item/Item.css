@@ -1,4 +1,12 @@
-.card-div {
-    display: flex;
-    flex-wrap: wrap;
+.item-card-img {
+    height: 300px;
+    width: 360px;
+}
+
+.item-card-title {
+    text-align: center;
+}
+
+.item-card-valor {
+    text-align: center;
 }
