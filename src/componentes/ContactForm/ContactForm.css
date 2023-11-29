@@ -1,11 +1,11 @@
 .contact-form {
+    height: 400px;
     width: 400px;
-    margin: 10px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border: 2px solid #cccccc;
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
     color: #040936ce;
     text-align: center;
@@ -13,10 +13,12 @@
 
 .contact-form-h3 {
     font-size: 28px;
-    background-color: #ffffff;
-    color:  #2C0E47;
+    color: #2C0E47;
+    background-color: white;
+    font-weight: bold;    
+    letter-spacing: 1px;
     width: 200px;
-    margin: 0px auto;
+    margin: 2px auto;
 }
 
 .contact-form input {

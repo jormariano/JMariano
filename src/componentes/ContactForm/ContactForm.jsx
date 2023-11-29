@@ -45,7 +45,7 @@ const ContactForm = () => {
 
             <input type="text" placeholder="  NOMBRE COMPLETO" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)}></input>
 
-            <input type="email" placeholder="  EMAIL" id="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+            <input type="email" placeholder="  E-MAIL" id="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
 
             <select id="choice" value={producto} onChange={(e) => setProducto(e.target.value)}>
                 <option value="" disabled hidden>SELECCIONA UN PRODUCTO</option>
@@ -53,7 +53,7 @@ const ContactForm = () => {
                 <option value="website"> E-COMMERCE</option>
             </select>
 
-            <textarea value={consulta} placeholder="  CONSULTA" onChange={(e) => setConsulta(e.target.value)}></textarea>
+            <textarea value={consulta} placeholder="  MENSAJE" onChange={(e) => setConsulta(e.target.value)}></textarea>
 
             <button type="submit" className='contact-form-button'>ENVIAR CONSULTA</button>
 
