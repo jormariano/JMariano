@@ -1,18 +1,5 @@
-.item-card-img {
-    height: 300px;
-    width: 360px;
-}
-
-.item-card-body {
-    text-align: center;
-}
-
-.item-card-title {
-    text-align: center;
-}
-
-.cart-button-finish {
-    margin: 4px 2px;
+.cart-button-eliminar {
+    margin: 0px 5px;
     background-color: #2C0E47;
     color: white;
     border: none;
@@ -20,7 +7,6 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;

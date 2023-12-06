@@ -1,30 +1,37 @@
 .faq-section {
-    width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    width: 850px;
+    margin: 5px auto;
+    padding: 2px 5px;
     border: 2px solid #cccccc;
+    text-align: center;
 }
 
 .faq-section h2 {
-    font-size: 26px;
+    font-size: 24px;
     color: #2C0E47;
     font-weight: bold;    
     letter-spacing: 1px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    background-color:  rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
 }
   
 .faq-item h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     text-align: center;
     margin-top: 5px;
 }
   
 .faq-item p {
-    font-size: 18px;
+    font-size: 16px;
     color: black;
-    background-color: #fff;
+    background-color:  rgba(255, 255, 255, 0.5);
     text-align: justify;
     margin-top: 0px;
+    padding: 10px;
+    border-radius: 10px;
 }

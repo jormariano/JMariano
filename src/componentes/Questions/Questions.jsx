@@ -4,7 +4,7 @@ const Questions = () => {
     return (
         <>
             <div className="faq-section">
-                <h2>Preguntas Frecuentes</h2>
+                <h2>PREGUNTAS FRECUENTES</h2>
 
                 <div className="faq-item">
                     <h3>¿Qué diferencia hay entre un Sitio web y un E-commerce?</h3>
@@ -12,17 +12,17 @@ const Questions = () => {
                 </div>
 
                 <div className="faq-item">
-                    <h3>¿Como sigo despues de la compra?</h3>
+                    <h3>¿Cómo sigo despues de la compra?</h3>
                     <p>Se te enviara un correo electronico con dias y horarios para sostener una reunion virtual en la que puedas explicarme todo lo que te gustaria que tenga el producto elegido.</p>
                 </div>
 
                 <div className="faq-item">
-                    <h3>¿El sitio es mio?</h3>
+                    <h3>¿El sitio web es mío?</h3>
                     <p>Si, el dominio del sitio estara a tu nombre, ya que debe pagarse anualmente para que no lo den de baja y lo mejor es que puedas renovarlo por tu cuenta.</p>
                 </div>
 
                 <div className="faq-item">
-                    <h3>¿Que pasa si quiero actualizar mi sitio web?</h3>
+                    <h3>¿Cómo hago para actualizar mi sitio web?</h3>
                     <p>Una vez finalizado el proyecto, para las futuras actualizaciones del sitio web podras acceder al producto denominado actualizacion.</p>
                 </div>
             </div>

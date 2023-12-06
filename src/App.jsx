@@ -4,8 +4,8 @@ import Inicio from './componentes/Inicio/Inicio'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer'
 import Portfolio from './componentes/Portfolio/Portfolio'
-import Blog from './componentes/Blog/Blog'
-import Contact from './componentes/Contact/Contact'
+import Conoceme from './componentes/Conoceme/Conoceme'
+import Contacto from './componentes/Contacto/Contacto'
 import Cart from './componentes/Cart/Cart'
 import IniciarSesion from './componentes/IniciarSesion/IniciarSesion'
 import CheckOut from './componentes/CheckOut/CheckOut'
@@ -26,8 +26,8 @@ const App = () => {
               <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
               <Route path='/item/:idItem' element={<ItemDetailContainer />} />
               <Route path='/portfolio' element={<Portfolio />} />
-              <Route path='/blog' element={<Blog />} />
-              <Route path='/contac' element={<Contact />} />
+              <Route path='/conoceme' element={<Conoceme />} />
+              <Route path='/contacto' element={<Contacto />} />
               <Route path='/cart' element={<Cart />} />
               <Route path='/checkout' element={< CheckOut />} />
               <Route path='/iniciarsesion' element={<IniciarSesion />} />

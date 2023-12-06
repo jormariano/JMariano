@@ -14,8 +14,7 @@
     color: #2C0E47;
     font-weight: bold;
     width: max-content;
-
-    animation: teclear 3s steps(20)
+    animation: teclear 3s steps(21)
 }
 
 @keyframes teclear {

@@ -1,14 +1,12 @@
+import './CheckOut.css'
 import { useState, useContext } from "react"
 import { CarritoContext } from "../../Context/CarritoContext"
 import { db } from "../../services/config"
 import { collection, addDoc, updateDoc, doc, getDoc } from "firebase/firestore"
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 
 const CheckOut = () => {
 
     const [nombre, setNombre] = useState("");
-    const [apellido, setApellido] = useState("");
     const [email, setEmail] = useState("");
     const [emailConfirmacion, setEmailConfirmacion] = useState("");
     const [error, setError] = useState("");
@@ -19,7 +17,7 @@ const CheckOut = () => {
     const manejadorFormulario = (event) => {
         event.preventDefault()
 
-        if (!nombre || !apellido || !email || !emailConfirmacion) {
+        if (!nombre || !email || !emailConfirmacion) {
             setError("Por favor, completa todos los campos")
             return;
         }
@@ -38,7 +36,6 @@ const CheckOut = () => {
             total: total,
             fecha: new Date(),
             nombre,
-            apellido,
             email,
         }
 
@@ -73,49 +70,42 @@ const CheckOut = () => {
 
     return (
         <div>
-            <form onSubmit={manejadorFormulario}>
+            <form onSubmit={manejadorFormulario} className='chekout-form'>
                 {
                     carrito.map(producto => (
-                        <div key={producto.item.id}>
-                            <Card style={{ height: '200px', width: '250px', margin: '5px' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Body>
-                                    <Card.Title>{producto.item.id}.- {producto.item.nombre}</Card.Title>
-                                    <Card.Text>{producto.item.nombre} x {producto.cantidad}</Card.Text>
-                                    <Card.Text>Precio: {producto.item.preciousd} </Card.Text>
-                                    <Card.Text>Cantidad total: {cantidadTotal}</Card.Text>
-                                </Card.Body>
-                            </Card>
-                            <hr />
+                        <div key={producto.item.id} className='checkout-productos'>
+                            <div className='checkout-product-description'>
+                                <img src={producto.item.img} alt='img del producto' />
+                                <div>
+                                    <h3>{producto.item.nombre} x {producto.cantidad}</h3>
+                                    <h4>Precio: {producto.item.pesos}{producto.item.preciopesos} - {producto.item.preciousd} {producto.item.usd} </h4>
+                                </div>
+                            </div>
                         </div>
                     ))
                 }
-                <div className="form-group">
-                    <label htmlFor="nombre">Nombre:</label>
-                    <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="apellido">Apellido:</label>
-                    <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Confirmacion Email:</label>
-                    <input type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
-                </div>
-                {
-                    error && <p style={{ color: "red" }}>{error}</p>
-                }
+                <p><strong>CANTIDAD TOTAL: {cantidadTotal} productos</strong></p>
+                <div className='form-buy'>
+                    <input type="text" placeholder="  NOMBRE COMPLETO *" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} />
 
-                <button type="submit">Finalizar compra</button>
+                    <input type="email" placeholder="  E-MAIL *" id='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+
+                    <input type="email" placeholder="  CONFIRMACIÓN DE E-MAIL *" id='emailconfirmacion' value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
+
+                    {
+                        error && <p style={{ color: "red" }}>{error}</p>
+                    }
+
+                    <button type="submit">COMPRAR</button>
+                </div>
             </form>
 
             {
                 ordenId && (
-                    <p>Gracias por tu compra. Tu numero de orden es: {ordenId}</p>
+                    <div className='orden-id'>
+                        <p>¡Muchas gracias por tu compra!</p>
+                        <p>Tu número de orden es: {ordenId}</p>
+                    </div>
                 )
             }
 

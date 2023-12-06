@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 const Blog = () => {
 
     return (
+
         <div className='blog-container'>
             {articulos.map((articulo, index) => (
                 <Card key={index} className='blog-card'>
@@ -17,7 +18,9 @@ const Blog = () => {
                     </Card.Body>
                 </Card>
             ))}
+
         </div>
+
     )
 }
 

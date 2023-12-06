@@ -29,9 +29,9 @@ const NavBar = () => {
 
           <li><NavLink to="/portfolio" className="nav-link"> PORTFOLIO </NavLink></li>
 
-          <li><NavLink to="/blog" className="nav-link"> BLOG/CONÓCEME </NavLink></li>
+          <li><NavLink to="/conoceme" className="nav-link"> CONÓCEME </NavLink></li>
 
-          <li><NavLink to="/contac" className="nav-link"> CONTACTO </NavLink></li>
+          <li><NavLink to="/contacto" className="nav-link"> CONTACTO </NavLink></li>
         </ul>
       </nav>
 
