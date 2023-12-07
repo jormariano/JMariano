@@ -1,7 +1,34 @@
-.conoceme-texto {
+.conoceme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    gap: 20px;
+    margin: 80px 250px;
+    background-color:  rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.conoceme-img {
+    height: 420px;
+    width: 400px;
+}
+
+.conoceme-texto h2 {
+    color: #2C0E47;
+    font-weight: bold;  
+    margin-bottom: 20px;
+}
+
+.conoceme-texto p {
+    text-align: justify;
+    font-size: 18px;
+    margin: 10px;
+}
+
+p.conoceme-contacto {
+    text-align: center;
 }

@@ -1,5 +1,6 @@
 import './IniciarSesion.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const IniciarSesion = () => {
 
@@ -29,13 +30,19 @@ const IniciarSesion = () => {
             {verificado ? (<button onClick={desahibilitarUsuario} className="loginUser closeBtn"> Cerrar sesión </button>) : (
                 <form onSubmit={habilitarUsuario} className="loginUser">
 
-                    <label htmlFor='usuario'>Usuario: </label>
-                    <input type='text' id='usuario' onChange={(e) => setUsuario(e.target.value)} value={usuario} />
+                    <h3><strong>Inicia sesión</strong></h3>
+                    
+                    <input type='text' placeholder="  CORREO ELECTRÓNICO *" id='usuario' onChange={(e) => setUsuario(e.target.value)} value={usuario} />
 
-                    <label htmlFor='contrasenia'>Contraseña: </label>
-                    <input type='text' id='contrasenia' onChange={(e) => setPass(e.target.value)} value={pass} />
+                    <input type='text' placeholder="  CONTRASEÑA *" id='contrasenia' onChange={(e) => setPass(e.target.value)} value={pass} />
 
-                    <button>Iniciar sesión</button>
+                    <button>INGRESAR</button>
+
+                    <p>Olvidé mi contraseña. <Link to="/contac" style={{ textDecoration: 'underline', color: 'inherit', fontWeight: '800'}}>Recuperar</Link></p>
+
+                    <p>¿Aún no tienes cuenta? <Link to="/contac" style={{ textDecoration: 'underline', color: 'inherit', fontWeight: '800'}}>Regístrate</Link></p>
+
+                    <p>No me llegó el mail de validación. <Link to="/contac" style={{ textDecoration: 'underline', color: 'inherit', fontWeight: '800'}}>Reenviar</Link></p>
 
                     {usuario === 'Inteta de nuevo' && pass === 'Inteta DE NUEVO' && <div className="error">Usuario o contraseña incorrectos</div>}
 
@@ -45,9 +52,5 @@ const IniciarSesion = () => {
         </>
     )
 }
-
-// Olvidé mi contraseña. Recuperar
-// ¿Aún no tienes cuenta? Regístrate
-// No me llegó el mail de validación. Reenviar
 
 export default IniciarSesion

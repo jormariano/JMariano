@@ -1,13 +1,18 @@
 import './Conoceme.css'
+import { Link } from 'react-router-dom'
 
 const Conoceme = () => {
+
+    const imgConoceme = "../../img/conoceme-01.jpg"
+
     return (
         <div className='conoceme'>
-            <img className='conoceme-img' src='' alt='foto de Jorgelina' />
+            <img className='conoceme-img' src={imgConoceme} alt='foto de Jorgelina' />
             <div className='conoceme-texto'>
-                <h2>Mi nombre es Jorgelina Mariano</h2>
-                <p>Me formé en CoderHouse como Desarrolladora FrontEnd, aprendiendo tecnologías Web tales como HTML, CSS, JavaScript y React.</p>
-                <p>Me apasiona crear código impecable y ofrecer soluciones de programación excepcionales. Desde desarrollar aplicaciones de software sólidas hasta abordar desafíos técnicos complejos. Colaboremos para transformar sus ideas en realidad y lograr sus objetivos de desarrollo de software. Póngase en contacto hoy para obtener soluciones confiables, eficientes y personalizadas adaptadas a sus requisitos.</p>
+                <h2>Soy Jorgelina Mariano</h2>
+                <p>Me formé en CoderHouse como Desarrolladora Front End, aprendiendo tecnologías Web tales como HTML, CSS, JavaScript y React. Actualmente, me encuentro estudiando programación Back End para desarrollar aplicaciones modernas con Node.js y MongoDB.</p>
+                <p> Me especializo en el desarrollo de sitios web dinámicos, e-commerce y páginas institucionales. Creando código impecable, estoy comprometida a transformar ideas en realidad. </p>
+                <p className='conoceme-contacto'> <Link to="/contacto" style={{ textDecoration: 'none', color: 'inherit'}}><strong>Contáctame</strong></Link> para soluciones confiables, eficientes y personalizadas. </p>
             </div>
         </div>
     )

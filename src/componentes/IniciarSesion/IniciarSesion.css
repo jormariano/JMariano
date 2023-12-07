@@ -1,48 +1,60 @@
-/* Estilos para el formulario */
 .loginUser {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 35px;
-  }
-  
-  /* Estilos para las etiquetas de los campos */
-  .loginUser label {
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  /* Estilos para los campos de entrada de texto */
-  .loginUser input {
-    width: 150px;
-    height: 30px;
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-  }
-  
-  /* Estilos para el botón de Iniciar sesión */
-  .loginUser button {
-    width: 150px;
-    height: 30px;
-    font-size: 15px;
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Estilos para el botón de Cerrar sesión */
-  .loginUser button.closeBtn {
-    background-color: #dc3545;
-  }
-  
-  /* Estilos para el mensaje de error */
-  .loginUser .error {
-    color: red;
-    font-size: 10px;
-    margin-bottom: 12px;
-  }
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  height: 350px;
+  width: 450px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #040936ce;
+  text-align: center;
+}
+
+.loginUser h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.loginUser input {
+  margin: 5px 0px;
+  height: 40px;
+  width: 350px;
+  outline: none;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.loginUser button {
+  background-color: #2C0E47;
+  font-size: 16px;
+  padding: 5px;
+  width: 180px;
+  color: #ebe2e2;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.loginUser p {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.loginUser button.closeBtn {
+  background-color: #dc3545;
+}
+
+.loginUser .error {
+  color: red;
+  font-size: 10px;
+  margin-bottom: 12px;
+}

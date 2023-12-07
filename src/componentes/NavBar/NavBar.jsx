@@ -36,8 +36,8 @@ const NavBar = () => {
       </nav>
 
       <div className='imgs-logos'>
-        <NavLink to="/iniciarsesion"> <img className="img-login" src={imgLogin} alt="login" /> </NavLink>
         <CartWidget />
+        <NavLink to="/iniciarsesion"> <img className="img-login" src={imgLogin} alt="login" /> </NavLink>
       </div>
     </header>
   )

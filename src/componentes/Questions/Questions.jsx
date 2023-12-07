@@ -12,18 +12,18 @@ const Questions = () => {
                 </div>
 
                 <div className="faq-item">
-                    <h3>¿Cómo sigo despues de la compra?</h3>
-                    <p>Se te enviara un correo electronico con dias y horarios para sostener una reunion virtual en la que puedas explicarme todo lo que te gustaria que tenga el producto elegido.</p>
+                    <h3>¿Cómo sigo después de la compra?</h3>
+                    <p>Se te enviará un correo electrónico con días y horarios para sostener una reunión virtual en la que puedas explicarme todo lo que te gustaría que tenga el producto elegido.</p>
                 </div>
 
                 <div className="faq-item">
-                    <h3>¿El sitio web es mío?</h3>
-                    <p>Si, el dominio del sitio estara a tu nombre, ya que debe pagarse anualmente para que no lo den de baja y lo mejor es que puedas renovarlo por tu cuenta.</p>
+                    <h3>¿El Sitio web o E-commerce es mío?</h3>
+                    <p>Sí, el dominio del sitio estará a tu nombre, ya que debe pagarse anualmente para que no lo den de baja y lo mejor es que puedas renovarlo por tu cuenta.</p>
                 </div>
 
                 <div className="faq-item">
-                    <h3>¿Cómo hago para actualizar mi sitio web?</h3>
-                    <p>Una vez finalizado el proyecto, para las futuras actualizaciones del sitio web podras acceder al producto denominado actualizacion.</p>
+                    <h3>¿Cómo hago para actualizar mi Sitio web o E-commerce?</h3>
+                    <p>Una vez finalizado el proyecto, para las futuras actualizaciones del sitio web podrás acceder al producto denominado actualización.</p>
                 </div>
             </div>
         </>
