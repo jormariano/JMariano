@@ -30,7 +30,7 @@ const IniciarSesion = () => {
             {verificado ? (<button onClick={desahibilitarUsuario} className="loginUser closeBtn"> Cerrar sesión </button>) : (
                 <form onSubmit={habilitarUsuario} className="loginUser">
 
-                    <h3><strong>Inicia sesión</strong></h3>
+                    <h3><strong>Iniciá sesión</strong></h3>
                     
                     <input type='text' placeholder="  CORREO ELECTRÓNICO *" id='usuario' onChange={(e) => setUsuario(e.target.value)} value={usuario} />
 

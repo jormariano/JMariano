@@ -14,7 +14,6 @@ const Inicio = () => {
 }
 
 // Pasar a ingles usando estas secciones: Home, About me, Portfolio, Contact. 
-// En Portfolio: Crear un espacio con comentarios de clientes y mostrar enlaces a sus Páginas/Ecommerce.
-// En Conoceme: Poner la opcion para descargar mi CV.
+// Dar la opcion de descargar mi CV
 
 export default Inicio

@@ -1,5 +1,20 @@
+.item-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 0px;
+    margin: 5px;
+    height: 520px;
+    width: 390px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
 .item-card-img {
-    height: 300px;
+    height: 320px;
     width: 360px;
 }
 
@@ -9,10 +24,15 @@
 
 .item-card-title {
     text-align: center;
+    text-decoration: none;
+    color: #2C0E47;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .cart-button-finish {
     margin: 4px 2px;
+    margin-bottom: 12px;
     background-color: #2C0E47;
     color: white;
     border: none;

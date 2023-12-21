@@ -1,7 +1,7 @@
 .item-count {
     display: flex;
     justify-content: space-around;
-    margin: 20px auto;
+    margin: 10px auto;
     height: 40px;
     width: 300px;
     align-items: center;

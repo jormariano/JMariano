@@ -1,7 +1,6 @@
 import './Item.css'
-import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { CarritoContext } from '../../Context/CarritoContext';
 import { useContext } from 'react';
@@ -21,17 +20,20 @@ const Item = ({ id, nombre, descripcion, stock, preciousd, usd, preciopesos, pes
 
     return (
 
-        <Card style={{ height: '500px', width: '400px', margin: '5px' }}>
-            <Card.Img variant="top" src={img} className='item-card-img' />
-            <Card.Body className='item-card-body'>
-                <Link to={`/item/${id}`}><Card.Title className='item-card-title'>{nombre}</Card.Title></Link>
-                <Card.Text><strong>Stock: {stock}</strong></Card.Text>
-                <Card.Text><strong>Valor: {pesos}{preciopesos} - {preciousd} {usd}</strong></Card.Text>
-                {
-                    agregarCantidad > 0 ? (<Link className='cart-button-finish' to='/cart'> Ir al carrito </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
-                }
-            </Card.Body>
-        </Card>
+        <>
+            <div className='item-card'>
+                <img src={img} alt='imagen item' className='item-card-img' />
+                <div className='item-card-body'>
+                    <Link to={`/item/${id}`} className='item-card-title'><h2 className='item-card-title'>{nombre}</h2></Link>
+                    <h4><strong>Stock: {stock}</strong></h4>
+                    <h4><strong>Valor: {pesos}{preciopesos} - {preciousd} {usd}</strong></h4>
+                    {
+                        agregarCantidad > 0 ? (<Link className='cart-button-finish' to='/cart'> Ir al carrito </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
+                    }
+                </div>
+            </div>
+        </>
+
     )
 }
 

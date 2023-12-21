@@ -12,3 +12,7 @@
     cursor: pointer;
     border-radius: 3px;
 }
+
+.cart-item-p {
+    margin: 5px;
+}

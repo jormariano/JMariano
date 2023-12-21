@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
-  const imgLogo = "../../img/logo-01.png"
+  const imgLogo = "../../logos/logo-01.png"
 
   const imgLogin = "../../img/login-01.png"
 
