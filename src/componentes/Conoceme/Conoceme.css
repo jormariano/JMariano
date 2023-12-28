@@ -32,3 +32,14 @@
 p.conoceme-contacto {
     text-align: center;
 }
+
+.conoceme-contacto-button {
+    background-color: #2C0E47;
+    font-size: 16px;
+    padding: 5px;
+    width: 160px;
+    color: #ebe2e2;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
